@@ -27,10 +27,15 @@ body {
 }
 
 .person {
+  display: flex;
+  align-items: flex-start;
+
 
 }
 
 .person__description {
+  font-size: 16px;
+  line-height: 22px;
 
 }
 
@@ -45,9 +50,18 @@ body {
 }
 
 .person__picture {
-
 }
 
 .person__position {
+  font-size: 18px;
+  margin: 0;
+  font-weight: normal;
+  font-style: italic;
+  color: #545454
+}
+
+.special {
+  color: #ED6D05;
+  font-weight: normal;
 
 }
