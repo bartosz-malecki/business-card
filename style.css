@@ -24,6 +24,7 @@ body {
     border-radius: 16px;
     margin: 16px;
     padding: 32px;
+    box-shadow: 8px 8px 8px 2px #000000;
 }
 
 .person {
@@ -43,6 +44,10 @@ body {
 
 }
 
+.person__link {
+  text-decoration: none;
+}
+
 .person__name {
     font-size: 36px;
     margin: 0;
@@ -50,6 +55,7 @@ body {
 }
 
 .person__picture {
+  padding-right: 32px;
 }
 
 .person__position {
