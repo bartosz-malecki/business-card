@@ -1,61 +1,103 @@
 html {
-    box-sizing: border-box;
-  }
-  
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-  
-body {
-    background-color: #2C2141;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
 
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #2c2141;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: rgb(216,215,221);
+  background: radial-gradient(circle, rgb(202, 202, 206) 0%, rgb(121, 121, 121) 18%, rgb(3, 9, 68) 100%);
 }
 
 .main {
-    width: 624px;
-    background-color: #F8F8F8;
-    border-radius: 16px;
-    margin: 16px;
-    padding: 32px;
-    box-shadow: 8px 8px 8px 2px #000000;
+  width: 624px;
+  background-color: #f8f8f8;
+  border-radius: 16px;
+  margin: 16px;
+  padding: 32px;
+  box-shadow: 8px 8px 8px 2px #000000;
+  display: flex;
+  align-items: flex-start;
+  background: rgb(162,188,218);
+background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(162, 162, 162) 100%);
 }
 
 .person {
   display: flex;
   align-items: flex-start;
+}
 
-
+.person__contact {
+  margin: 0 0;
+  display: flex;
+  align-items: center;
 }
 
 .person__description {
   font-size: 16px;
   line-height: 22px;
-
 }
 
 .person__info {
-
 }
 
 .person__link {
-  text-decoration: none;
+  width: 55px;
+  height: 55px;
+  margin: auto;
+}
+
+.person__link--fb {
+  width: 55px;
+  height: 55px;
+}
+
+.person__link--gh {
+  width: 55px;
+  height: 55px;
+}
+
+.person__link--ig {
+  width: 55px;
+  height: 55px;
+}
+
+.person__link--fb:hover {
+  transform: scale(1.2);
+}
+
+.person__link--gh:hover {
+  transform: scale(1.2);
+}
+
+.person__link--ig:hover {
+  transform: scale(1.2);
 }
 
 .person__name {
-    font-size: 36px;
-    margin: 0;
-    font-weight: normal;
+  font-size: 36px;
+  margin: 0;
+  font-weight: normal;
 }
 
 .person__picture {
   padding-right: 32px;
+  border-radius: 50%;
+  max-width: 160px;
+}
+
+.person__picture:hover {
+  transform: scale(1.2);
 }
 
 .person__position {
@@ -63,11 +105,10 @@ body {
   margin: 0;
   font-weight: normal;
   font-style: italic;
-  color: #545454
+  color: #545454;
 }
 
 .special {
-  color: #ED6D05;
+  color: #ed6d05;
   font-weight: normal;
-
 }
