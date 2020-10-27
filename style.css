@@ -9,7 +9,6 @@ html {
 }
 
 body {
-  background-color: #2c2141;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,6 +35,11 @@ background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(162, 162, 162) 10
   display: flex;
   align-items: flex-start;
 }
+@media screen and (max-width: 425px) {
+  .person {
+    display: block;
+  }
+}
 
 .person__contact {
   margin: 0 0;
@@ -48,8 +52,6 @@ background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(162, 162, 162) 10
   line-height: 22px;
 }
 
-.person__info {
-}
 
 .person__link {
   width: 55px;
@@ -94,6 +96,7 @@ background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(162, 162, 162) 10
   padding-right: 32px;
   border-radius: 50%;
   max-width: 160px;
+  float: left;
 }
 
 .person__picture:hover {
