@@ -24,6 +24,10 @@ body {
   );
 }
 
+.img {
+  aspect-ratio: attr(width) / attr(height);
+}
+
 .main {
   width: 624px;
   background-color: #f8f8f8;
@@ -54,7 +58,6 @@ body {
     padding: 32px;
   }
 }
-
 
 .person__contact {
   margin: 0 0;
@@ -110,6 +113,7 @@ body {
   text-align: center;
   border-radius: 50%;
   max-width: 148px;
+  height: auto;
 }
 
 .person__picture:hover {
